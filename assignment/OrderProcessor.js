@@ -39,11 +39,10 @@ function processOrder(orderData) {
 
     const finalAmount = afterDiscount + tax;
 
-    // ✅ Return SAME STRUCTURE as input + calculated fields
     return {
         id: order.id,
         customerType: order.customerType,
-        items: order.items, // original format preserved
+        items: order.items,
         coupon: order.coupon,
         location: order.location,
 
